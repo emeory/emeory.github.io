@@ -1,22 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://emeory.github.io</id>
-    <title>Emeory Blog</title>
-    <updated>2020-11-13T10:13:23.363Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://emeory.github.io"/>
-    <link rel="self" href="https://emeory.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://emeory.github.io/images/avatar.png</logo>
-    <icon>https://emeory.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Emeory Blog</rights>
-    <entry>
-        <title type="html"><![CDATA[Java与Linux的进程与线程模型]]></title>
-        <id>https://emeory.github.io/post/linux-jin-cheng-de-zhuang-tai/</id>
-        <link href="https://emeory.github.io/post/linux-jin-cheng-de-zhuang-tai/">
-        </link>
-        <updated>2020-11-13T06:51:57.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="1-概述">1. 概述</h2>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java与Linux的进程与线程模型 | Emeory Blog</title>
+<link rel="shortcut icon" href="https://emeory.github.io/favicon.ico?v=1605262399240">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://emeory.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java与Linux的进程与线程模型 | Emeory Blog - Atom Feed" href="https://emeory.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1. 概述
+操作系统教科书中进程有5种状态：
+
+
+
+状态
+描述
+
+
+
+
+开始状态
+进程刚创建
+
+
+就绪状态
+进程在就绪队列中，只要得到CPU时间片就可以执行
+
+
+运行状态
+进程正在执行
+
+
+阻塞状态
+进程在等待其他资源，比如文件读写，打印机..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://emeory.github.io">
+  <img class="avatar" src="https://emeory.github.io/images/avatar.png?v=1605262399240" alt="">
+  </a>
+  <h1 class="site-title">
+    Emeory Blog
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java与Linux的进程与线程模型
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-11-13
+              </span>
+              <span>
+                12 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h2 id="1-概述">1. 概述</h2>
 <p>操作系统教科书中进程有5种状态：</p>
 <table>
 <thead>
@@ -165,38 +261,101 @@
 <li>阻塞(Blocked): 线程被阻塞了，“阻塞状态”和“等待状态”的区别是：“阻塞状态”在等待着获取一个排他锁，这个时间将在另外一个线程放弃这个锁的时候发生；而“等待状态”则是在等待一段时间，或者唤醒动作的发生。在程序等待进入同步区域的时候，线程将进入这种状态。</li>
 <li>结束(Terminated): 已终止线程的线程状态。</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://emeory.github.io/post/hello-gridea/</id>
-        <link href="https://emeory.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1-%E6%A6%82%E8%BF%B0">1. 概述</a></li>
+<li><a href="#2-linux%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E8%AF%A6%E8%A7%A3">2. Linux进程状态详解</a>
+<ul>
+<li><a href="#1-rrunning-%E5%8F%AF%E6%89%A7%E8%A1%8C%E7%8A%B6%E6%80%81">1. R(Running)    可执行状态</a></li>
+<li><a href="#2-ssleeping-%E6%B5%85%E5%BA%A6%E7%9D%A1%E7%9C%A0%E6%80%81%E5%8D%B3%E5%8F%AF%E4%B8%AD%E6%96%AD%E7%9A%84%E7%9D%A1%E7%9C%A0%E7%8A%B6%E6%80%81">2. S(Sleeping)   浅度睡眠态（即可中断的睡眠状态）</a></li>
+<li><a href="#3-dtask_uninterruptible-%E6%B7%B1%E5%BA%A6%E7%9D%A1%E7%9C%A0%E6%80%81%E5%8D%B3%E4%B8%8D%E5%8F%AF%E4%B8%AD%E6%96%AD%E7%9A%84%E7%9D%A1%E7%9C%A0%E7%8A%B6%E6%80%81">3. D(TASK_UNINTERRUPTIBLE) 深度睡眠态（即不可中断的睡眠状态）</a></li>
+<li><a href="#4-tstopped-%E6%9A%82%E5%81%9C%E7%8A%B6%E6%80%81">4. T(Stopped)    暂停状态</a></li>
+<li><a href="#5-z-task_dead-exit_zombie%E5%83%B5%E5%B0%B8-%E7%8A%B6%E6%80%81">5. Z (TASK_DEAD - EXIT_ZOMBIE)僵尸 状态</a></li>
+</ul>
+</li>
+<li><a href="#3-%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">3. 线程模型</a>
+<ul>
+<li><a href="#1-%E5%A4%9A%E5%AF%B9%E4%B8%80%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">1. 多对一线程模型</a></li>
+<li><a href="#2-%E4%B8%80%E5%AF%B9%E4%B8%80%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">2. 一对一线程模型</a></li>
+<li><a href="#3-%E5%A4%9A%E5%AF%B9%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">3. 多对多线程模型</a></li>
+</ul>
+</li>
+<li><a href="#4-java%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B">4. Java的线程模型</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://emeory.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://emeory.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
